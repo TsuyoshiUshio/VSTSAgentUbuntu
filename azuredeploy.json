@@ -193,7 +193,7 @@
             "apiVersion": "[variables('apiVersion')]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
-                "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+                "[variables('vmName')]"
             ],
             "properties": {
                 "publisher": "Microsoft.OSTCExtensions",
@@ -214,7 +214,7 @@
             "apiVersion": "[variables('apiVersion')]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
-                "[concat('Microsoft.Compute/virtualMachines/', variables('azureVMUtilsName'))]"
+                "[concat(variables('vmName'),'/', variables('azureVMUtilsName'))]"
             ],
             "properties": {
                 "publisher": "Microsoft.Azure.Extensions",
