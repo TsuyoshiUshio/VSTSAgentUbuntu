@@ -36,6 +36,7 @@
     "variables": {
         "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",
         "location": "[resourceGroup().location]",
+        "extensionName": "vmDockerExt",
         "azureVMUtilsName": "vmCustomizationExt",
         "azureVMUtilsScriptUrl": "https://raw.githubusercontent.com/TsuyoshiUshio/VSTSAgentUbuntu/master/setup_java_and_node.sh",
         "dataDisk1VhdName": "datadisk1",
