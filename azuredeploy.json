@@ -204,7 +204,7 @@
                     "fileUris": [
                         "[variables('azureVMUtilsScriptUrl')]"
                     ],
-                    "commandToExecute": "sudo setup_data_disk.sh"
+                    "commandToExecute": "sudo setup_java_and_node.sh"
                 }
             }
         }
